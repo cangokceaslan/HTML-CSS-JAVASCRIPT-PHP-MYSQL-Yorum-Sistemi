@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            .container{
+                position:absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                border: 2px solid lightgray;
+                width:50%;
+            }
+            #username{
+                width: calc(100% - 5px);
+                height: 40px;
+            }
+            #comment{
+                width: calc(100% - 5px);
+                height:150px;
+            }
+            #submit{
+                height:40px;
+                width:40%;
+                background-color:green;
+                color:white;
+                font-size:15px;
+                display:block;
+            }
+            .comments{
+                width: calc(100% - 5px);
+                list-style:none;
+                padding:0px;
+                margin:0px;
+                margin-top:10px;
+            }
+            .comments > li{
+                border:1px solid black;
+                margin:2px;
+                padding:6px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <input type="text" id="username" name="username" placeholder="Bir Kullanıcı Adı Giriniz" />
+            <textarea id="comment" placeholder="Bir yorum giriniz"></textarea>
+            <input type="radio" name="rating" value="1">1</input>
+            <input type="radio" name="rating" value="2">2</input>
+            <input type="radio" name="rating" value="3">3</input>
+            <input type="radio" name="rating" value="4">4</input>
+            <input type="radio" name="rating" value="5">5</input>
+            <button id="submit"> Gönder </button>
+            <ul class="comments">
+                
+            </ul>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
